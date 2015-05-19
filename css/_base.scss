@@ -1,0 +1,118 @@
+/* Base.scss */
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+body {
+    @include body-font;
+    background-color: #1a1a1a;
+    //font-size: $base-font-size;
+    //line-height: $line-height;
+    margin: 0 auto;
+    // margin: top/bottom left/right;
+    width: 100%;
+}
+
+p {
+       
+}
+
+h1, h2, h3, .headline {
+    @include headline-font;
+}
+
+i, em {
+    @include body-font-italic;
+}
+
+b, strong {
+    @include body-font-bold;
+}
+
+a, .btn, .toggler, .untoggler {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 300ms linear;
+    &:hover {
+        color: darken(#fff, 20%);
+    }
+}
+
+ul {
+    margin: 0;
+    //padding: 0.2em;
+}
+
+h1 {
+    font-size: em(60px);
+    margin: em(20px) 0 em(40px) 0;
+    //margin: top right bottom left;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: em(44px);
+    margin: em(30px) 0 em(10px) 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: em(34px);
+    margin: em(20px) 0 em(6px) 0;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: em(24px);
+    margin: em(20px) 0 em(2px) 0;
+}
+
+h1 + p, h2 + p,
+h3 + p, h4 + p,{
+    margin-top: 0;
+}
+
+//blockquote {
+//    background-color: lighten($color,70%);
+//    margin: 0;
+//    padding: em(16px);
+//}
+
+blockquote p:first-of-type {
+    margin-top: 0;
+}
+
+blockquote cite {
+    display: block;
+    @include body-font-bold;
+    text-align: right;
+}
+
+dt {
+    @include body-font-bold;
+}
+
+dd {
+    margin: 0 0 em(10px) 0;
+}
+
+ul {
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+
+p + ul {
+    margin-top: em(-20px)
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    margin: 0 0 em(40px) 2em;
+    padding: 0;
+}
+
+ol li {
+    margin-bottom: em(8px)
+}

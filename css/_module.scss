@@ -1,0 +1,40 @@
+/* Module.scss */
+
+//.banner {
+//    background: url('../img/background-image.jpg') top center no-repeat;
+//    background-size: cover;
+//    height: 70%;
+//    height: 70vh;
+//    //text-align: center;
+//}
+
+.banner-title {
+    background-color: none;
+    border-radius: 8px;
+    color: #8d8c8c;
+    //display: inline-block;
+    line-height: 1;
+    padding: 8px;
+}
+
+.banner-title h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.banner-title h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.logo-background {
+    fill: pink;
+}
+
+.logo-eye {
+    fill: red;
+}
+
+.info-seattle, .info-links, .info-link {
+    background-color: rebeccapurple;
+}
